@@ -1,6 +1,6 @@
-This folder used to make patch cropping given a case with contained files:
-	+One .svs file for WSI
-	+One .xml file for "Polygon" annotation
+This repository used to make a utility pipeline for patch-cropping given a case with contained files:
+	-One .svs file for whole slide image (WSI)
+	-One .xml file for "Polygon" annotation
 
 
 
