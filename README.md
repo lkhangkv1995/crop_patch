@@ -4,10 +4,10 @@ This repository used to make a utility pipeline for patch-cropping given a case 
 	
 	-One .xml file for "Polygon" annotation
 
-Annotation of .svs file to create .xml can be conducted by ASAP software. The software can be found [here](https://computationalpathologygroup.github.io/ASAP/).
+Annotation of .svs file to create .xml can be conducted by ASAP software. The software can be found and downloaded from [here](https://computationalpathologygroup.github.io/ASAP/).
 
 
-First, we need to determine the following parameters:
+First, we need to determine the following parameters (can be found adjustable in execution.sh):
 
 	-micron: the actual size of the patch
 	
@@ -24,13 +24,9 @@ Next: change these parameters in execution.sh file (do not change the "root" par
 
 Finally, on Ubuntu, execute the commands:
 
-#Change directory to this folder (could be different regarding local PC):
 ```
-cd ~/patch_crop
-```
-#From now on, the same for all local PCs:
-
-```
+git clone https://github.com/lkhangkv1995/crop_patch
+cd patch_crop
 python3 -m venv venv
 source venv/bin/activate
 pip install -r pip_requirements.txt
