@@ -1,13 +1,20 @@
 This repository used to make a utility pipeline for patch-cropping given a case with contained files:
+
 	-One .svs file for whole slide image (WSI)
+	
 	-One .xml file for "Polygon" annotation
 
+Annotation of .svs file to create .xml can be conducted by ASAP software. The software can be found [here](https://computationalpathologygroup.github.io/ASAP/).
 
 
 First, we need to determine the following parameters:
+
 	-micron: the actual size of the patch
+	
 	-x_pixel: the resolution size of x-axis
+	
 	-y_pixel: the resolution size of y-axis
+	
 	-images_per_case: determine number of patches per case
 
 Then: move the "TCGA" folders (containing 1 .svs files and 1 corresonponding .xml file) into "Test" folder
