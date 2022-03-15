@@ -1,0 +1,7 @@
+
+openslide-python==1.1.2
+xml-python==0.4.3
+matplotlib==3.5.1
+numpy==1.22.3
+shapely==1.8.1
+
