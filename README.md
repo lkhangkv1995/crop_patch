@@ -6,8 +6,14 @@ This repository used to make a utility pipeline for patch-cropping given a case 
 
 Annotation of .svs file to create .xml can be conducted by ASAP software. The software can be found and downloaded from [here](https://computationalpathologygroup.github.io/ASAP/).
 
+First, we execute this command on Ubuntu:
+```
+git clone https://github.com/lkhangkv1995/crop_patch
+```
 
-First, we need to determine the following parameters (can be found adjustable in execution.sh):
+We should see the crop_patch folder in the local directory.
+
+Then, we need to determine the following parameters (can be found adjustable in execution.sh):
 
 	-micron: the actual size of the patch
 	
@@ -17,15 +23,13 @@ First, we need to determine the following parameters (can be found adjustable in
 	
 	-images_per_case: determine number of patches per case
 
-Then: move the "TCGA" folders (containing 1 .svs files and 1 corresonponding .xml file) into "Test" folder
-(not the "Done" folder into the "Test" folder)
+Then: move the image folders (containing 1 .svs files and 1 corresonponding .xml file) into "Test" folder.
 
 Next: change these parameters in execution.sh file (do not change the "root" parameter)
 
 Finally, on Ubuntu, execute the commands:
 
 ```
-git clone https://github.com/lkhangkv1995/crop_patch
 cd patch_crop
 python3 -m venv venv
 source venv/bin/activate
