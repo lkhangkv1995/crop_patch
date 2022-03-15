@@ -21,6 +21,7 @@ Finally, on Ubuntu, execute the commands:
 cd ~/patch_crop
 
 #From now on, the same for all local PCs:
+
 python3 -m venv venv
 source venv/bin/activate
 pip install -r pip_requirements.txt
@@ -28,6 +29,4 @@ chmod +x execution.sh
 ./execution.sh
 
 Then Ubuntu should be running...
-
-Note that the patch_crop file move the
 
