@@ -30,7 +30,7 @@ def tightup_function(folder_path, folder, micron, x_pixel, y_pixel, images_per_c
 	for randompoint in randompoint_list:
 		#If we get each random point as the center of our patches, we use this command:
 		patch = slide.read_region(location=randompoint, level=0, size=size).convert("RGB") 
-		patch.resize((x_pixel,y_pixel))
+		patch = patch.resize((x_pixel,y_pixel))
 		#Basically patch is PIL object.
         	#Start creating the patch number:
 		patch_no = str(i)
